@@ -1,13 +1,51 @@
 import {Header, StatsCard, TripCard} from "../../../components";
-const Dashboard = () => {
-  const user={name:'Akshara'};
-  const dashboardStats={
+const user={name:'Akshara'};
+const dashboardStats={
     totalUsers: 12450,
     usersJoined: {currentMonth: 218, lastMonth: 176},
     totalTrips:3210,
     tripsCreated: {currentMonth: 150, lastMonth: 250},
     userRole: {total: 62, currentMonth: 25, lastMonth:15}
   }
+  const allTrips = [{
+    id: 1,
+    name: "Tropical Rewind",
+    imageUrls: ["/assets/images/sample1.jpg"],
+    itinerary: [{ location: "Thailand" }],
+    tags: ["Adventure", "Culture"],
+    travelStyle: "Solo",
+    estimatedPrice: "$1,000",
+  },
+  {
+    id: 2,
+    name: "French Reverie",
+    imageUrls: ["/assets/images/sample2.jpg"],
+    itinerary: [{ location: "Paris" }],
+    tags: ["Relaxation", "Culinary"],
+    travelStyle: "Family",
+    estimatedPrice: "$2,000",
+  },
+  {
+    id: 3,
+    name: "Zen Break",
+    imageUrls: ["/assets/images/sample3.jpg"],
+    itinerary: [{ location: "Japan" }],
+    tags: ["Shopping", "Luxury"],
+    travelStyle: "Couple",
+    estimatedPrice: "$3,000",
+  },
+  {
+    id: 4,
+    name: "Adventure in Westeros",
+    imageUrls: ["/assets/images/sample4.jpg"],
+    itinerary: [{ location: "Croatia" }],
+    tags: ["Historical", "Culture"],
+    travelStyle: "Friends",
+    estimatedPrice: "$4,000",
+  },
+  ];
+const Dashboard = () => {
+  
   const {totalUsers, usersJoined, totalTrips, tripsCreated, userRole} = dashboardStats;
   return (
     <main className='dashboard wrapper'>
