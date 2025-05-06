@@ -48,4 +48,3 @@ tourvisto/
 ├── .env
 ├── tsconfig.json
 └── package.json
-more updates coming<img width="150" alt="image" src="https://github.com/user-attachments/assets/53560961-16ba-4812-95e8-1276c3097f86" />
